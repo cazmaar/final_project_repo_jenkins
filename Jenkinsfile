@@ -1,5 +1,8 @@
 pipeline{
     agent any
+    environment{
+        url="postgres://kazo:korede@159.65.62.220:5007"
+    }
     stages{
         stage("init"){
             steps{
