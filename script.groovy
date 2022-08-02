@@ -1,6 +1,6 @@
 def test(){
     echo "testing"
-    sh "npm ci --production"
+    sh "npm i"
     sh "npm test"
 }
 def build(){
