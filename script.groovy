@@ -12,3 +12,5 @@ def build(){
 def deploy(){
     echo "it's live"
 }
+
+return this

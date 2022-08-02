@@ -7,13 +7,19 @@ pipeline{
             }
         }
         stage("test"){
-            steps{}
+            steps{
+                gv.test()
+            }
         }
         stage("build"){
-            steps{}
+            steps{
+                gv.build()
+            }
         }
         stage("deploy"){
-            steps{}
+            steps{
+                gv.deploy()
+            }
         }
     }
     post{
