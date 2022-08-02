@@ -1,0 +1,25 @@
+version: '3'
+services:
+  postgres:
+    image: postgres
+    ports:
+      - 4001:5432
+    environment:
+      - POSTGRES_USER=kazo
+      - POSTGRES_PASSWORD=korede
+    container_name: dataB
+    volumes:
+      - database:/var/lib/postgresql/data
+  backend_final:
+    image: backend:1.1
+    ports:
+      - 4006:5003
+    environment:
+      - url=postgres://kazo:korede@dataB
+volumes:
+  database:
+    driver: local
+
+  
+  
+    

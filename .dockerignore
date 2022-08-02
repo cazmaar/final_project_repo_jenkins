@@ -1,0 +1,9 @@
+.gitignore
+README.md
+.prettierrc
+app.json
+Dockerfile
+node_modules
+Jenkinsfile
+starter.sh
+script.groovy
