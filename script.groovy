@@ -1,6 +1,7 @@
 def test(){
     echo "testing"
     sh "npm ci --production"
+    sh "npm test"
 }
 def build(){
     withCredentials([usernamePassword(credentialsId: '94290158-e809-48d4-a7df-0d83c7b67fbc', passwordVariable: 'PASS', usernameVariable: 'USER')]) {
